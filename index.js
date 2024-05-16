@@ -94,6 +94,7 @@ const port = 3000;
 //   console.error("An error occurred:", error);
 //   process.exit(1);
 // });
+app.get("/", (req, res) => res.send(200));
 
 app.listen(port, () => {
   console.log("port running on");
